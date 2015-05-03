@@ -6,6 +6,7 @@ set autoindent "改行時に前の行のインデントを継続する
 set smartindent "改行時に入力された行の末尾に合わせて次の行のインデントを増減
 set nocompatible              " be iMproved, required
 set mouse=a "スクロールできるようにする
+set backspace=indent,eol,start
 filetype off                  " required
 
 """"""""""""""""""""""""""""""
