@@ -95,6 +95,8 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'kchmck/vim-coffee-script'
 " html
 NeoBundle 'mattn/emmet-vim'
+" インデントを表示する
+NeoBundle 'nathanaelkane/vim-indent-guides' 
 
 call neobundle#end()
 
