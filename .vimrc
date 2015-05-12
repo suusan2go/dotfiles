@@ -96,7 +96,9 @@ NeoBundle 'kchmck/vim-coffee-script'
 " html
 NeoBundle 'mattn/emmet-vim'
 " インデントを表示する
-NeoBundle 'nathanaelkane/vim-indent-guides' 
+NeoBundle 'Yggdroot/indentLine'
+" let g:indentLine_faster = 1
+nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 
 call neobundle#end()
 
