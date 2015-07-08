@@ -1,4 +1,4 @@
-""""
+set list
 set expandtab "タブ入力を複数の空白入力に置き換える
 set tabstop=2 "画面上でタブ文字が占める幅
 set shiftwidth=2 "自動インデントでずれる幅
@@ -8,6 +8,7 @@ set smartindent "改行時に入力された行の末尾に合わせて次の行
 set nocompatible              " be iMproved, required
 set mouse=a "スクロールできるようにする
 set backspace=indent,eol,start
+set clipboard=unnamed
 filetype off                  " required
 
 """"""""""""""""""""""""""""""
@@ -42,7 +43,7 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'marcus/rsense'
 NeoBundle 'supermomonga/neocomplete-rsense.vim'
 
-" 静的解析
+" 静的解析 & rubocopによるコーディングチェック
 NeoBundle 'scrooloose/syntastic'
 
 " ドキュメント参照
@@ -83,6 +84,8 @@ au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
 au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 """"""""""""""""""""""""""""""
 
+" html入力補助
+NeoBundle 'mattn/emmet-vim'
 " ファイルツリー表示
 NeoBundle 'scrooloose/nerdtree'
 " ctrl + e で開けるようにする
@@ -95,6 +98,10 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'kchmck/vim-coffee-script'
 " html
 NeoBundle 'mattn/emmet-vim'
+" インデントを表示する
+NeoBundle 'Yggdroot/indentLine'
+" let g:indentLine_faster = 1
+nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 
 call neobundle#end()
 
