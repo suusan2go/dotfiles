@@ -101,6 +101,8 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'mattn/emmet-vim'
 " インデントを表示する
 NeoBundle 'Yggdroot/indentLine'
+" cjsxを使えるようにする
+NeoBundle 'mtscout6/vim-cjsx'
 " let g:indentLine_faster = 1
 nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 
