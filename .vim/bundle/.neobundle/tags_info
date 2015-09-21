@@ -1,4 +1,5 @@
 emmet-vim
+indentLine
 neobundle.vim
 neocomplete-rsense.vim
 neocomplete.vim
@@ -7,6 +8,7 @@ nerdtree
 rsense
 syntastic
 unite.vim
+vim-cjsx
 vim-coffee-script
 vim-colors-solarized
 vim-endwise
