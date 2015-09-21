@@ -1,4 +1,3 @@
-"""""""""
 set list
 set expandtab "タブ入力を複数の空白入力に置き換える
 set tabstop=2 "画面上でタブ文字が占める幅
@@ -11,6 +10,7 @@ set mouse=a "スクロールできるようにする
 set backspace=indent,eol,start
 set clipboard=unnamed
 filetype off                  " required
+
 
 """"""""""""""""""""""""""""""
 " プラグインのセットアップ
@@ -43,6 +43,9 @@ NeoBundle 'mxw/vim-jsx'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'marcus/rsense'
 NeoBundle 'supermomonga/neocomplete-rsense.vim'
+let g:neocomplete#enable_at_startup = 1
+" TABで補完できるようにする
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " 静的解析 & rubocopによるコーディングチェック
 NeoBundle 'scrooloose/syntastic'
