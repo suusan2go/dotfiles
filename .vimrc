@@ -102,8 +102,6 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'kchmck/vim-coffee-script'
 " html
 NeoBundle 'mattn/emmet-vim'
-" slim
-NeoBundle 'slim-template/vim-slim'
 " インデントを表示する
 NeoBundle 'Yggdroot/indentLine'
 " cjsxを使えるようにする
